@@ -43,6 +43,9 @@ body{
 
 .chapter hr{
     margin: 20px 0;
+    border: none;
+    height: 2px;
+    background-color: #ADB9D2;
 }
 
 .chapter-name:hover{

@@ -2,8 +2,6 @@ $('.chapter-content').hide();
 
 window.onload = function(){
 
-
-
     $('.chapter-name').on('click', function(){
         if($(this).next().is(':hidden')){
             $(this).next().slideDown();
