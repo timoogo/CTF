@@ -8,6 +8,8 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
+/* MENU DE GAUCHE */
+
 .chapter-menu{
     min-height: 100vh;
     max-height: 100vh;
@@ -76,3 +78,5 @@ body{
     background-color: #707070;
     border-radius: 50%;
 }
+
+/* FIN MENU DE GAUCHE */
