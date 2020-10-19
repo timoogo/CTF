@@ -59,6 +59,29 @@
             </div>
         </div>
     </main>
+    <footer>
+        <div id="toDoList">
+            <div id="upperTDL">
+                <h3>To-Do List</h3>
+            </div>
+            <div id="lowerTDL">
+                <ol>
+                    <li>
+                        <h4>Faire ceci :</h4>
+                        <pre>
+                            <code>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, culpa at fuga sunt dolorem odit deserunt illum obcaecati voluptatibus laborum, vel quis quos est, repellat amet facere numquam illo iure?</code>
+                        </pre>
+                    </li>
+                    <li>
+                        <h4>Faire cela :</h4>
+                        <pre>
+                            <code>bonjoir</code>
+                        </pre>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </footer>
     <script src="script/main.js"></script>
 </body>
 
