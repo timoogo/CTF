@@ -1,3 +1,5 @@
+/* THIS IS MAIN CSS */
+
 * {
     margin: 0;
     padding: 0;
@@ -9,9 +11,11 @@ body{
     overflow: hidden;
 }
 
+/* MENU DE GAUCHE */
+
 .chapter-menu{
-    min-height: 100%;
-    max-height: 100%;
+    min-height: 100vh;
+    max-height: 100vh;
     position: absolute;
     display: flex;
     color: #ADB9D2;
@@ -35,6 +39,7 @@ body{
     padding-top: 50px;
     background-color: #51607F;
     width: 470px;
+    overflow: auto;
 }
 
 .chapter{
@@ -66,6 +71,7 @@ body{
     width: 70px;
     justify-content: center;
     align-items: center;
+    min-height: 100vh;
 }
 
 .circle{
@@ -75,6 +81,8 @@ body{
     background-color: #707070;
     border-radius: 50%;
 }
+
+/*--------------------------FIN MENU DE GAUCHE--------------------------- */
 
 #toDoList{
     position: absolute;
@@ -133,5 +141,4 @@ code{
 code::before{
     content: "> ";
 }
-
 
