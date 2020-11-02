@@ -4,15 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/style.css">
 
-    <link rel="stylesheet" href="style/xterm.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/termStyle.css">
+
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css" />
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <script src="script/jquery.js"></script>
-    <script src="script/term_functions.js"></script>
-    <script src="script/term.js"></script>
+
     <title>Capture The Flag</title>
 </head>
 
@@ -63,17 +64,16 @@
                 <div class="circle"></div>
             </div>
         </div>
-        <div id="term_container">
 
-            <div id="term">
-                <output></output>
-                <div id="input-line" class="input-line">
-                    <div class="prompt"></div>
-                    <div><input class="cmdline" autofocus /></div>
-
+        <div id="main-container">
+            <div id="term-container">
+                <div id="ligne">
+                    <p id="term_text">C:\CTF\DOS></p>
+                    <input name="command" type="text" id="term">
                 </div>
             </div>
         </div>
+
     </main>
     <footer>
         <div id="toDoList">
@@ -99,6 +99,7 @@
         </div>
     </footer>
     <script src="script/main.js"></script>
+    <script src="script/termMain.js"></script>
 </body>
 
 </html>

@@ -17,7 +17,7 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
   var fs_ = null;
   var cwd_ = null;
   var history_ = [];
-  var histpos_ = 0;
+  var histpos_ = 0; 
   var histtemp_ = 0;
 
   window.addEventListener('click', function(e) {
