@@ -27,6 +27,7 @@
              <li><a href="#" class="my-account">Mon compte</a></li>
              <li><a href="#">A propos</a></li>
          </ul>
+
         </nav>
     </header>
     
