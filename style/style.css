@@ -21,6 +21,9 @@ nav{
     justify-content: space-around;
     align-content: center;
     color: var(--clear-color);
+    position: relative;
+    top: 50px;
+    z-index: 10;
 
 
 }
