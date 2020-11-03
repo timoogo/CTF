@@ -21,7 +21,7 @@
     <header>
         <nav>
             <ul>
-                <li>Acceuil</li>
+                <li>Accueil</li>
                 <li>Mon compte</li>
                 <li>À propos</li>
             </ul>
