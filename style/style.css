@@ -1,5 +1,7 @@
 /* THIS IS MAIN CSS */
-
+:root{
+    --clear-color: #ADB9D2;
+}
 * {
     margin: 0;
     padding: 0;
@@ -15,6 +17,37 @@ header{
     min-height: 50px;
     width: 100%;
     background-color: #2c2e33;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    color: var(--clear-color);
+    position: relative;
+    top: 0%;
+    z-index: 10;
+
+
+}
+.logo, nav ul{
+    align-items: center;
+    display: flex;
+}
+nav ul{
+    display: flex;
+    align-content: center;
+
+}
+nav ul li{
+    margin: auto 3rem;
+}
+
+nav a{
+    color: var(--clear-color);
+    text-decoration: none;
+}
+
+main{
+    width: 100vw;
+    height: 95vh;
 }
 
 
@@ -29,7 +62,7 @@ header{
     max-height: 100vh;
     position: absolute;
     display: flex;
-    color: #ADB9D2;
+    color: var(--clear-color);
     width: fit-content;
     transform: translate(-470px, 0);
     transition: 1s;
@@ -62,7 +95,7 @@ header{
     margin: 20px 0;
     border: none;
     height: 2px;
-    background-color: #ADB9D2;
+    background-color: var( --clear-color);
 }
 
 .chapter-name:hover{
