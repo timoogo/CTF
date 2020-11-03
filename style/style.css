@@ -142,7 +142,6 @@ main{
     height: 470px;
     width: 400px;
     transition: 1s;
-    background-color: #4E5057;
 }
 
 #upperTDL{
@@ -158,6 +157,7 @@ main{
 
 #lowerTDL{
     width: 100%;
+    padding-top: 15px;
     height: 420px;
     background-color: #4E5057;
     
@@ -176,7 +176,6 @@ h4{
 
 #toDoList hr{
     margin: 0px 20px;
-    margin-top: 15px;
     border: none;
     height: 2px;
     background-color: #BABABA;

@@ -18,8 +18,6 @@ window.onload = function(){
     });
 }
 
-// $('#toDoList').css("bottom") = -50;
-
 var leTacosCinqViandesCinqSauce = TDLclick.addEventListener("click", function(){TDL.style.bottom == '0px' ? (setTimeout(function(){TDLlist.style.display = 'none'} ,1000), TDL.style.bottom = '-423px') : (TDL.style.bottom = '0px', TDLlist.style.display = 'block');});
 
 
