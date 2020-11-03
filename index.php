@@ -18,6 +18,18 @@
 </head>
 
 <body>
+    <header>
+        <nav>
+            <ul>
+                <li>Acceuil</li>
+                <li>Mon compte</li>
+                <li>À propos</li>
+            </ul>
+        </nav>
+    </header>
+    
+
+
     <main>
         <div class="chapter-menu">
             <div class="left-menu">
