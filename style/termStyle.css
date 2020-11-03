@@ -1,14 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
-main{
-    width: 100vw;
-    height: 91vh;
-}
-
-
 #main-container{
     width: 100%;
-    height: 100vh   ;
+    height: 95vh;
     display: flex;
     justify-content: center;
     align-items: center;
