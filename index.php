@@ -20,11 +20,13 @@
 <body>
     <header>
         <nav>
-            <ul>
-                <li>Acceuil</li>
-                <li>Mon compte</li>
-                <li>À propos</li>
-            </ul>
+          <div class="logo">
+            <a href="#">Accueil</a>
+          </div>
+         <ul>
+             <li><a href="#" class="my-account">Mon compte</a></li>
+             <li><a href="#">A propos</a></li>
+         </ul>
         </nav>
     </header>
     
