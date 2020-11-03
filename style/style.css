@@ -142,6 +142,7 @@ main{
     height: 470px;
     width: 400px;
     transition: 1s;
+    background-color: #4E5057;
 }
 
 #upperTDL{
@@ -170,19 +171,29 @@ li{
 h4{
     font-size: 22px;
     color: #EEEEEE;
-    padding: 10px 10px;
+    padding: 10px 20px;
 }
+
+#toDoList hr{
+    margin: 0px 20px;
+    margin-top: 15px;
+    border: none;
+    height: 2px;
+    background-color: #BABABA;
+}
+
 
 
 pre{
     height: 130px;
-    margin: 10px 20px;
+    margin: 0px 20px;
     background-color: #BABABA;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     white-space : pre-wrap;
     overflow: auto;
+    border-radius: 3px;
 }
 
 code{
