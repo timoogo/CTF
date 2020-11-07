@@ -1,5 +1,6 @@
 #term_container {
   position: absolute;
+  padding: 10px;
   left: 20%;
   top: 20%;
   z-index: -1;
@@ -9,10 +10,6 @@
   font-family: Inconsolata, monospace;
   color: white;
   background-color: black;
-}
-
-#term_container {
-  padding: .1em 1.5em 1em 1em;
 }
 
 #term_container output {

@@ -98,12 +98,14 @@
             <div id="lowerTDL">
                 <ol>
                     <li>
+                        <hr>
                         <h4>Faire ceci :</h4>
                         <pre>
                             <code>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, culpa at fuga sunt dolorem odit deserunt illum obcaecati voluptatibus laborum, vel quis quos est, repellat amet facere numquam illo iure?</code>
                         </pre>
                     </li>
                     <li>
+                        <hr>
                         <h4>Faire cela :</h4>
                         <pre>
                             <code>bonjoir</code>
