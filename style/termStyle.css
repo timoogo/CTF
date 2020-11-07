@@ -5,7 +5,6 @@ main{
     height: 91vh;
 }
 
-
 #main-container{
     width: 100%;
     height: 100vh   ;
@@ -15,7 +14,17 @@ main{
     background-color: rgb(79, 95, 126);
 }
 
-#term{
+#term-container{
+    width: 1140px;
+    height: 490px;
+    background-color: black;
+    box-shadow: 1px 5px 10px black;
+    border: solid 20px #4E5057;
+    transition: 0.7s;
+    overflow: auto;
+}
+
+.term{
     height: 25px;
     width: 960px;
     color: rgb(0, 255, 0);
@@ -32,18 +41,7 @@ main{
     word-spacing: -4px;
 }
 
-#term-container{
-    width: 1140px;
-    height: 490px;
-    background-color: black;
-    box-shadow: 1px 5px 10px black;
-    border: solid 20px #4E5057;
-    transition: 0.7s;
-}
-
-
-
-#term_text{
+.term_text{
     height: 25px;
     width: fit-content;
     color: rgb(0, 255, 0);
@@ -57,10 +55,13 @@ main{
 
 }
 
-#ligne{
+.line{
     display: flex;
     width: 98%;
     height: 15px;
     margin: auto;
 
 }
+
+/* TODO modifier les dimensions des lignes pour éviter qu'elles se superposent */
+/* TODO Ajouter de la logique pour intéragir avec le contenu entré dans le terminal */
