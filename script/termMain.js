@@ -35,7 +35,7 @@ function CreateNewLine() {
     var newLine = $('<div class="line" id="currentLine"></div>');
     $('#term-container').append(newLine);
 
-    var termText = $('<p class="term_text">C:\CTF\DOS></p>');
+    var termText = $('<p class="term_text">C:\\CTF\\DOS></p>');
     var command  = $('<input name="command" type="text" class="term" id="currentCmd">');
     $('#currentLine').append(termText, command);
 }

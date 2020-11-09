@@ -23,46 +23,40 @@ main{
     border: solid 20px #4E5057;
     transition: 0.7s;
     overflow: auto;
+    padding: 10px;
 }
 
 .term{
-    height: 25px;
-    width: 960px;
+    height: 1.2rem;
+    flex: 1 0 0;
     color: rgb(0, 255, 0);
     border: none;
     background-color: black;
     outline: none;
     font-family: 'VT323', monospace;
-    font-size: 20px;
+    font-size: 1.2rem;
     letter-spacing: 0.5px;
     cursor: default;
-    margin-top: 10px;
     text-transform: uppercase;
     text-indent: 2px;
     word-spacing: -4px;
 }
 
 .term_text{
-    height: 25px;
-    width: fit-content;
+    height: auto;
     color: rgb(0, 255, 0);
     border: none;
     background-color: black;
     outline: none;
     font-family: 'VT323', monospace;
-    font-size: 20px;
+    font-size: 1.2rem;
     letter-spacing: 0.5px;
-    margin-top: 10px;
 
 }
 
 .line{
     display: flex;
-    width: 98%;
-    height: 15px;
-    margin: auto;
-
+    height: 1.2rem;
 }
 
-/* TODO modifier les dimensions des lignes pour éviter qu'elles se superposent */
 /* TODO Ajouter de la logique pour intéragir avec le contenu entré dans le terminal */
