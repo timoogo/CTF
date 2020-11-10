@@ -29,11 +29,11 @@ function LineAddEventListener() {
             LineAddEventListener();
         }
         if (e.key === "ArrowUp" && historyPosition < (historyArray.length - 1)) {
-            historyPosition++
+            historyPosition++;
             currentLine.value = historyArray[historyPosition];
         }
         if (e.key === "ArrowDown" && historyPosition > 0) {
-            historyPosition--
+            historyPosition--;
             currentLine.value = historyArray[historyPosition];
         }
     })
@@ -45,6 +45,7 @@ function TerminalOnEnter() {
     $('#currentCmd').attr('disabled', true); //Prevent entry in previous lines
     $('#currentCmd').removeAttr('id');
     CreateNewLine();
+    historyPosition = 0;
 }
 
 function TerminalHistoryOnEnter(){
