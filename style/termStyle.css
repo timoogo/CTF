@@ -43,6 +43,7 @@ main{
 }
 
 .term_text{
+    align-self: center;
     height: auto;
     color: rgb(0, 255, 0);
     border: none;
