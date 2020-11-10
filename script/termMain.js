@@ -9,6 +9,11 @@ LineAddEventListener();
 let historyArray = [""]
 
 
+window.onload = function(){
+    currentLine.value = ""
+}
+
+
 
 //Focus the current line whenever clicking in the terminal
 terminal.addEventListener("click", fonction);
