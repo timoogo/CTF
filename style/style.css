@@ -133,7 +133,7 @@ main{
     border-radius: 50%;
 }
 
-/*--------------------------FIN MENU DE GAUCHE--------------------------- */
+/*--------------------------TO DO LIST--------------------------- */
 
 #toDoList{
     position: absolute;
@@ -153,6 +153,10 @@ main{
     justify-content: center;
     align-items: center;
     font-size: 30px;
+}
+
+#upperTDL:hover{
+    cursor: pointer;
 }
 
 #lowerTDL{
