@@ -11,8 +11,31 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(79, 95, 126);
+    /* background-color: rgb(79, 95, 126); */
     padding-left: 70px;
+    background: linear-gradient(270deg, #03045e,#023e8a, #0077b6, #33415c, #4d194d);
+    background-size: 400% 400%;
+    -webkit-animation: gradiant 16s ease infinite;
+    -moz-animation: gradiant 16s ease infinite;
+    animation: gradiant 16s ease infinite;
+
+}
+
+
+@-webkit-keyframes gradiant {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@-moz-keyframes gradiant {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@keyframes gradiant {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
 }
 
 #term-container{
@@ -24,7 +47,12 @@ main{
     transition: 0.7s;
     overflow: auto;
     padding: 10px;
+   
+
 }
+      
+
+  
 
 .term{
     height: 1.2rem;
@@ -37,9 +65,11 @@ main{
     font-size: 1.2rem;
     letter-spacing: 0.5px;
     cursor: default;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     text-indent: 2px;
     word-spacing: -4px;
+    word-break: break-all;
+
 }
 
 .term_text{
