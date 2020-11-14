@@ -89,7 +89,7 @@ function CheckUserInput() {
             textAnswer = $('<p class="term_text">command return running...</p>');
             break;
         case "link":
-            textAnswer = $('<a href="https://youtu.be/dQw4w9WgXcQ"><p class="term_text">this is a super link</p></a>');
+            textAnswer = $('<a href="https://youtu.be/dQw4w9WgXcQ" target="_blank"><p class="term_text">this is a super link</p></a>');
             break;
     }
     termAnswer.append(textAnswer);
