@@ -6,17 +6,18 @@ var historyPosition = 0
 
 LineAddEventListener();
 
-let historyArray = [""]
+let historyArray = [""];
 
 
-window.onload = function(){
-    currentLine.value = ""
+window.onload = function () {
+    currentLine.value = "";
 }
 
 
 
 //Focus the current line whenever clicking in the terminal
 terminal.addEventListener("click", fonction);
+
 function fonction() {
     currentLine.focus();
 };
@@ -26,11 +27,11 @@ function LineAddEventListener() {
     currentLine.addEventListener('keydown', (e) => {
         if (e.key === "Enter") {
             //console.log(e);
-            TerminalHistoryOnEnter()
+            TerminalHistoryOnEnter();
             TerminalOnEnter();
+
             currentLine = document.getElementById('currentCmd');
             currentLine.focus();
-
             LineAddEventListener();
         }
         if (e.key === "ArrowUp" && historyPosition < (historyArray.length - 1)) {
@@ -49,15 +50,16 @@ function TerminalOnEnter() {
     $('#currentLine').removeAttr('id');
     $('#currentCmd').attr('disabled', true); //Prevent entry in previous lines
     $('#currentCmd').removeAttr('id');
+    CheckUserInput();
     CreateNewLine();
     historyPosition = 0;
 }
 
-function TerminalHistoryOnEnter(){
-    historyArray.shift()
+function TerminalHistoryOnEnter() {
+    historyArray.shift();
     historyArray.unshift(currentLine.value);
-    historyArray.unshift("")
-    console.log(historyArray)
+    historyArray.unshift("");
+    console.log(historyArray);
 }
 
 
@@ -68,9 +70,24 @@ function CreateNewLine() {
     $('#term-container').append(newLine);
 
     var termText = $('<p class="term_text">C:\\CTF\\DOS></p>');
-    var command  = $('<input name="command" type="text" class="term" id="currentCmd">');
+    var command = $('<input name="command" type="text" class="term" id="currentCmd">');
     $('#currentLine').append(termText, command);
 }
 
-
-
+function CheckUserInput() {
+    // console.log(currentLine.value);
+    // Create the div where the answer will be returned
+    var termAnswer = $('<div class="line"></div>');
+    $('#term-container').append(termAnswer);
+    var textAnswer = $('<p class="term_text">unknown command</p>');
+    // Check the user input and execute the corresponding command
+    switch (currentLine.value){
+        case "help":
+            textAnswer = $('<p class="term_text">you typed : help</p>');
+            break;
+        case "return":
+            textAnswer = $('<p class="term_text">command return running...</p>');
+            break;
+    }
+    termAnswer.append(textAnswer);
+}
