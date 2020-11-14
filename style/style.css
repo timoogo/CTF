@@ -13,6 +13,10 @@ body{
     overflow: hidden;
 }
 
+a{
+    text-decoration: none;
+}
+
 header{
     min-height: 5vh;
     width: 100%;
@@ -48,7 +52,6 @@ nav ul li{
 
 nav a{
     color: var(--clear-color);
-    text-decoration: none;
 }
 
 main{

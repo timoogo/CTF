@@ -83,10 +83,13 @@ function CheckUserInput() {
     // Check the user input and execute the corresponding command
     switch (currentLine.value){
         case "help":
-            textAnswer = $('<p class="term_text">you typed : help</p>');
+            textAnswer = $('<p class="term_text">available functions : help return link</p>');
             break;
         case "return":
             textAnswer = $('<p class="term_text">command return running...</p>');
+            break;
+        case "link":
+            textAnswer = $('<a href="https://youtu.be/dQw4w9WgXcQ"><p class="term_text">this is a super link</p></a>');
             break;
     }
     termAnswer.append(textAnswer);
