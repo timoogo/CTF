@@ -82,9 +82,9 @@
 
         <div id="main-container">
             <div id="term-container">
-                <div class="line" id="currentLine">
-                    <p class="term_text">C:\CTF\DOS></p>
-                    <input name="command" type="text" class="term" id="currentCmd">
+                <div class="line answers" id="currentLine">
+                    <p class="term_text answers">C:\CTF\DOS></p>
+                    <input name="command" type="text" class="term answers" id="currentCmd">
                 </div>
             </div>
         </div>

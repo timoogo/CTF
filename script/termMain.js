@@ -66,10 +66,10 @@ function TerminalHistoryOnEnter() {
 
 
 function CreateNewLine() {
-    var newLine = $('<div class="line" id="currentLine"></div>');
+    var newLine = $('<div class="line answers" id="currentLine"></div>');
     $('#term-container').append(newLine);
 
-    var termText = $('<p class="term_text">C:\\CTF\\DOS></p>');
+    var termText = $('<p class="term_text answers">C:\\CTF\\DOS></p>');
     var command = $('<input name="command" type="text" class="term" id="currentCmd">');
     $('#currentLine').append(termText, command);
 }
@@ -77,22 +77,26 @@ function CreateNewLine() {
 function CheckUserInput() {
     // console.log(currentLine.value);
     // Create the div where the answer will be returned
-    var termAnswer = $('<div class="line"></div>');
+    var termAnswer = $('<div class="line answers"></div>');
     $('#term-container').append(termAnswer);
-    var textAnswer = $('<p class="term_text">unknown command</p>');
+    var textAnswer = $('<p class="term_text answers">unknown command</p>');
     // Check the user input and execute the corresponding command
     switch (currentLine.value){
         case "help":
-            textAnswer = $('<p class="term_text">available functions : help return link reload</p>');
+            textAnswer = $('<p class="term_text answers">available functions : help, return, link, reload</p>');
+            break;
+        case "clear":
+            textAnswer = ""
+            $( ".answers" ).remove();
             break;
         case "return":
-            textAnswer = $('<p class="term_text">This is the return function</p>');
+            textAnswer = $('<p class="term_text answers">This is the return function</p>');
             break;
         case "link":
-            textAnswer = $('<a href="https://youtu.be/dQw4w9WgXcQ" target="_blank"><p class="term_text">this is a super link</p></a>');
+            textAnswer = $('<a href="https://youtu.be/dQw4w9WgXcQ" target="_blank"><p class="term_text answers">this is a super link</p></a>');
             break;
         case "reload":
-            textAnswer = $('<p class="term_text">reloading the page...</p>');
+            textAnswer = $('<p class="term_text answers">reloading the page...</p>');
             setTimeout(function(){
                 document.location.reload();
             },2000);
