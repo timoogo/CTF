@@ -17,5 +17,6 @@ window.onload = function(){
     });
 }
 
-var leTacosCinqViandesCinqSauce = TDLclick.addEventListener("click", function(){TDL.style.bottom == '0px' ? (setTimeout(function(){TDLlist.style.display = 'none'} ,1000), TDL.style.bottom = '-423px') : (TDL.style.bottom = '0px', TDLlist.style.display = 'block');});
+// var leTacosCinqViandesCinqSauce = TDLclick.addEventListener("click", function(){TDL.style.bottom == '0px' ? (setTimeout(function(){TDLlist.style.display = 'none'} ,1000), TDL.style.bottom = '-420px') : (TDL.style.bottom = '0px', TDLlist.style.display = 'block');});
 
+var leTacosCinqViandesCinqSauce = TDLclick.addEventListener("click", function(){TDL.style.height == '470px' ? (setTimeout(function(){TDLlist.style.display = 'none'} ,1000), TDL.style.height = '50px') : (TDL.style.height = '470px', TDLlist.style.display = 'block');});
