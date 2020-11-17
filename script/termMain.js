@@ -1,7 +1,9 @@
+// const { contains } = require("jquery");
+
 var currentLine = document.getElementById('currentCmd');
 var terminal = document.getElementById('term-container');
 var historyPosition = 0
-
+let terminal_j = $("#term-container");
 
 
 LineAddEventListener();
@@ -17,6 +19,7 @@ window.onload = function () {
 
 //Focus the current line whenever clicking in the terminal
 terminal.addEventListener("click", fonction);
+//terminal.addEventListener("click", DragTerminal);
 
 function fonction() {
     currentLine.focus();
@@ -104,3 +107,19 @@ function CheckUserInput() {
     }
     termAnswer.append(textAnswer);
 }
+
+function DragTerminal(){
+    mult = 1.8;
+    terminal_j.draggable({
+        containment: "#main-container",
+        cursor:"grab",
+        drag: function (event, ui) {
+            ui.position.top += (ui.offset.top - ui.originalPosition.top) * mult;
+            ui.position.left += (ui.offset.left - ui.originalPosition.left) * mult;
+        }
+    }); 
+   
+}
+$("#term-container").resizable();
+
+//DragTerminal();
