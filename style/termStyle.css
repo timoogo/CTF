@@ -89,7 +89,6 @@ main{
 
 .line{
     display: flex;
-    height: 1.2rem;
 }
 
 /* TODO Ajouter de la logique pour intéragir avec le contenu entré dans le terminal */
