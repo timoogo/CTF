@@ -82,6 +82,7 @@ main{
     width: fit-content;
     transform: translate(-470px, 0);
     transition: 1s;
+    z-index: 1;
 }
 
 /* .chapter-menu:hover{
