@@ -19,7 +19,7 @@
 }
 
 
-@-webkit-keyframes gradiant {
+ @-webkit-keyframes gradiant {
   0%{background-position:0% 50%}
   50%{background-position:100% 50%}
   100%{background-position:0% 50%}
@@ -41,11 +41,9 @@
     background-color: black;
     box-shadow: 1px 5px 10px black;
     border: solid 20px #4E5057;
-    transition: 0.7s;
     overflow: auto;
     padding: 10px;
-   
-
+    position: absolute;
 }
       
 

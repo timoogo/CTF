@@ -21,17 +21,17 @@
 <body>
     <header>
         <nav>
-          <div class="logo">
-            <a href="#">Accueil</a>
-          </div>
-         <ul>
-             <li><a href="#" class="my-account">Mon compte</a></li>
-             <li><a href="#">A propos</a></li>
-         </ul>
+            <div class="logo">
+                <a href="#">Accueil</a>
+            </div>
+            <ul>
+                <li><a href="#" class="my-account">Mon compte</a></li>
+                <li><a href="#">A propos</a></li>
+            </ul>
 
         </nav>
     </header>
-    
+
 
 
     <main>
@@ -88,7 +88,9 @@
                     <input name="command" type="text" class="term answers" id="currentCmd">
                 </div>
             </div>
+            <div id='testdrag' style="background-color: grey; width:100px; height:100px; position: absolute; top:200px; left:200px">Coucou</div>
         </div>
+
 
     </main>
     <footer>
