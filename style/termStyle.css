@@ -90,5 +90,13 @@ main{
 .line{
     display: flex;
 }
+a.underline .term_text{
+  text-decoration: underline rgb(0,255,0);
+
+}
+a.underline .term_text:hover{
+  color:#fff !important;
+  text-decoration: underline #fff;
+}
 
 /* TODO Ajouter de la logique pour intéragir avec le contenu entré dans le terminal */

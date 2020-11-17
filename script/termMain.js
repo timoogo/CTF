@@ -93,7 +93,7 @@ function CheckUserInput() {
             textAnswer = $('<p class="term_text answers">This is the return function</p>');
             break;
         case "link":
-            textAnswer = $('<a href="https://youtu.be/dQw4w9WgXcQ" target="_blank"><p class="term_text answers">this is a super link</p></a>');
+            textAnswer = $('<a class="underline" href="https://youtu.be/dQw4w9WgXcQ" target="_blank"><p class="term_text answers">this is a super link</p></a>');
             break;
         case "reload":
             textAnswer = $('<p class="term_text answers">reloading the page...</p>');
