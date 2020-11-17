@@ -1,7 +1,6 @@
-var currentLine = document.getElementById('currentCmd');
-var terminal = document.getElementById('term-container');
-var historyPosition = 0
-
+let currentLine = document.getElementById('currentCmd');
+let terminal = document.getElementById('term-container');
+let historyPosition = 0;
 
 
 LineAddEventListener();
@@ -66,20 +65,20 @@ function TerminalHistoryOnEnter() {
 
 
 function CreateNewLine() {
-    var newLine = $('<div class="line answers" id="currentLine"></div>');
+    let newLine = $('<div class="line answers" id="currentLine"></div>');
     $('#term-container').append(newLine);
 
-    var termText = $('<p class="term_text answers">C:\\CTF\\DOS></p>');
-    var command = $('<input name="command" type="text" class="term" id="currentCmd">');
+    let termText = $('<p class="term_text answers">C:\\CTF\\DOS></p>');
+    let command = $('<input name="command" type="text" class="term" id="currentCmd">');
     $('#currentLine').append(termText, command);
 }
 
 function CheckUserInput() {
     // console.log(currentLine.value);
     // Create the div where the answer will be returned
-    var termAnswer = $('<div class="line answers"></div>');
+    let termAnswer = $('<div class="line answers"></div>');
     $('#term-container').append(termAnswer);
-    var textAnswer = $('<p class="term_text answers">unknown command</p>');
+    let textAnswer = $('<p class="term_text answers">unknown command</p>');
     // Check the user input and execute the corresponding command
     switch (currentLine.value){
         case "help":

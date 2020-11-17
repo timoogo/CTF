@@ -73,7 +73,7 @@
                     <hr>
                 </div>
             </div>
-            <div class="right-menu">
+            <div class="right-menu inactive">
                 <div class="circle"></div>
                 <div class="circle"></div>
                 <div class="circle"></div>
