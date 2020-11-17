@@ -1,11 +1,33 @@
 $('.chapter-content').hide();
+let rightmenu = $('.right-menu');
+let chaptermenu = $('.chapter-menu');
+let TDLclick = document.getElementById('upperTDL')
+let TDLlist = document.getElementById('lowerTDL')
+let TDL = document.getElementById('toDoList')
 
-var TDLclick = document.getElementById('upperTDL')
-var TDLlist = document.getElementById('lowerTDL')
-var TDL = document.getElementById('toDoList')
+    rightmenu.on('click', function(){
+        console.log($(this).attr("class"));
+        if($(this).hasClass('active')){
+            chaptermenu.css(
+                {
+                "transform": "translate(-470px,0)",
+                 "transition": "0.5s",}
+            );
+            $(this).removeClass('active');
+            $(this).addClass('inactive');
+            
+        } else if($(this).hasClass('inactive')){
+            chaptermenu.css(
+                {
+                    "transform": "translate(0,0)",
+                    "transition": "0.5s",}
+                    );
+                    $(this).removeClass('inactive');
+                    $(this).addClass('active');
+        }
 
-
-window.onload = function(){
+        
+    })
     $('.chapter-name').on('click', function(){
         if($(this).next().is(':hidden')){
             $(this).next().slideDown();
@@ -15,7 +37,7 @@ window.onload = function(){
             $(this).find('i').css('transform', 'rotate(0deg)'); 
         }      
     });
-}
 
-var leTacosCinqViandesCinqSauce = TDLclick.addEventListener("click", function(){TDL.style.bottom == '0px' ? (setTimeout(function(){TDLlist.style.display = 'none'} ,1000), TDL.style.bottom = '-423px') : (TDL.style.bottom = '0px', TDLlist.style.display = 'block');});
+
+let leTacosCinqViandesCinqSauce = TDLclick.addEventListener("click", function(){TDL.style.bottom == '0px' ? (setTimeout(function(){TDLlist.style.display = 'none'} ,1000), TDL.style.bottom = '-423px') : (TDL.style.bottom = '0px', TDLlist.style.display = 'block');});
 
