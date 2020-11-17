@@ -112,10 +112,10 @@ function DragTerminal(){
     terminal_j.draggable({
         containment: "#main-container",
         cursor:"grab",
-        drag: function (event, ui) {
-            ui.position.top += (ui.offset.top - ui.originalPosition.top) * mult;
-            ui.position.left += (ui.offset.left - ui.originalPosition.left) * mult;
-        }
+        // drag: function (event, ui) {
+        //     ui.position.top += (ui.offset.top - ui.originalPosition.top) * mult;
+        //     ui.position.left += (ui.offset.left - ui.originalPosition.left) * mult;
+        // }
     }); 
    
 }

@@ -46,7 +46,6 @@ main{
     background-color: black;
     box-shadow: 1px 5px 10px black;
     border: solid 20px #4E5057;
-    transition: 0.7s;
     overflow: auto;
     padding: 10px;
    
