@@ -86,7 +86,7 @@ function CheckUserInput() {
     // Check the user input and execute the corresponding command
     switch (currentLine.value){
         case "help":
-            textAnswer = $('<p class="term_text answers">available functions : help <br>return <br>link <br>reload</p>');
+            textAnswer = $('<p class="term_text answers">available functions : <br>help <br>return <br>link <br>reload <br>clear</p>');
             break;
         case "clear":
             textAnswer = ""
@@ -118,8 +118,10 @@ function DragTerminal(){
         //     ui.position.left += (ui.offset.left - ui.originalPosition.left) * mult;
         // }
     }); 
+
    
 }
 $("#term-container").resizable();
 
 DragTerminal();
+
