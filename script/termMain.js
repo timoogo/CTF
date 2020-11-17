@@ -1,10 +1,11 @@
+// const { contains } = require("jquery");
+
 var currentLine = document.getElementById('currentCmd');
 var terminal = document.getElementById('term-container');
 var historyPosition = 0
+let terminal_j = $("#term-container");
 
-
-
-LineAddEventListener();
+ LineAddEventListener();
 
 let historyArray = [""];
 
@@ -17,6 +18,7 @@ window.onload = function () {
 
 //Focus the current line whenever clicking in the terminal
 terminal.addEventListener("click", fonction);
+//terminal.addEventListener("click", DragTerminal);
 
 function fonction() {
     currentLine.focus();
@@ -81,13 +83,13 @@ function CheckUserInput() {
     $('#term-container').append(termAnswer);
     var textAnswer = $('<p class="term_text answers">unknown command</p>');
     // Check the user input and execute the corresponding command
-    switch (currentLine.value){
+    switch (currentLine.value) {
         case "help":
             textAnswer = $('<p class="term_text answers">available functions : help <br>return <br>link <br>reload</p>');
             break;
         case "clear":
             textAnswer = ""
-            $( ".answers" ).remove();
+            $(".answers").remove();
             break;
         case "return":
             textAnswer = $('<p class="term_text answers">This is the return function</p>');
@@ -97,10 +99,11 @@ function CheckUserInput() {
             break;
         case "reload":
             textAnswer = $('<p class="term_text answers">reloading the page...</p>');
-            setTimeout(function(){
+            setTimeout(function () {
                 document.location.reload();
-            },2000);
+            }, 2000);
             break;
     }
     termAnswer.append(textAnswer);
 }
+
