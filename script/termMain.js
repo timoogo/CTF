@@ -86,7 +86,7 @@ function CheckUserInput() {
     // Check the user input and execute the corresponding command
     switch (currentLine.value) {
         case "help":
-            textAnswer = $('<p class="term_text answers">available functions : help <br>return <br>link <br>reload</p>');
+            textAnswer = $('<p class="term_text answers">available functions : <br>help <br>return <br>link <br>reload <br>clear</p>');
             break;
         case "clear":
             textAnswer = ""
@@ -107,4 +107,20 @@ function CheckUserInput() {
     }
     termAnswer.append(textAnswer);
 }
+
+function DragTerminal(){
+    mult = 1.8;
+    terminal_j.draggable({
+        containment: "#main-container",
+        cursor:"grabbing",
+        // drag: function (event, ui) {
+        //     ui.position.top += (ui.offset.top - ui.originalPosition.top) * mult;
+        //     ui.position.left += (ui.offset.left - ui.originalPosition.left) * mult;
+        // }
+    }); 
+
+}
+$("#term-container").resizable();
+
+DragTerminal();
 

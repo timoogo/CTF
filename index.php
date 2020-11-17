@@ -88,7 +88,6 @@
                     <input name="command" type="text" class="term answers" id="currentCmd">
                 </div>
             </div>
-            <div id='testdrag' style="background-color: grey; width:100px; height:100px; position: absolute; top:200px; left:200px">Coucou</div>
         </div>
 
 
