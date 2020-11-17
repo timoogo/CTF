@@ -145,6 +145,7 @@ main{
     height: 50px;
     width: 400px;
     transition: 1s;
+    overflow: hidden;
 }
 
 #upperTDL{
@@ -167,7 +168,6 @@ main{
     padding-top: 15px;
     height: 420px;
     background-color: #4E5057;
-    display: none;
 }
 
 li{

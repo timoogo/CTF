@@ -6,24 +6,24 @@ var historyPosition = 0
 let terminal_j = $("#term-container");
 
 
-// LineAddEventListener();
+LineAddEventListener();
 
 let historyArray = [""];
 
 
-// window.onload = function () {
-//     currentLine.value = "";
-// }
+window.onload = function () {
+    currentLine.value = "";
+}
 
 
 
-// //Focus the current line whenever clicking in the terminal
-// terminal.addEventListener("click", fonction);
-// //terminal.addEventListener("click", DragTerminal);
+//Focus the current line whenever clicking in the terminal
+terminal.addEventListener("click", fonction);
+//terminal.addEventListener("click", DragTerminal);
 
-// function fonction() {
-//     currentLine.focus();
-// };
+function fonction() {
+    currentLine.focus();
+};
 
 function LineAddEventListener() {
     //Event listener when pressing the enter key while writing in the terminal
