@@ -75,8 +75,8 @@ main{
 /* MENU DE GAUCHE */
 
 .chapter-menu{
-    min-height: 100vh;
-    max-height: 100vh;
+    min-height: 95vh;
+    max-height: 95vh;
     position: absolute;
     display: flex;
     color: var(--clear-color);
@@ -155,11 +155,12 @@ main{
 
 #toDoList{
     position: absolute;
-    bottom: -420px;
+    bottom: 0px;
     right: 0px;
-    height: 470px;
+    height: 50px;
     width: 400px;
     transition: 1s;
+    overflow: hidden;
 }
 
 #upperTDL{
@@ -181,8 +182,12 @@ main{
     width: 100%;
     padding-top: 15px;
     height: 420px;
+<<<<<<< HEAD
     background-color: var(--abbey-color);
     
+=======
+    background-color: #4E5057;
+>>>>>>> terminal-ability
 }
 
 li{
