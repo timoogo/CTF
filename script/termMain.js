@@ -1,49 +1,50 @@
 // const { contains } = require("jquery");
 
-var currentLine = document.getElementById('currentCmd');
-var terminal = document.getElementById('term-container');
+var currentLine = $('#currentCmd');
+var terminal = $('#term-container');
 var historyPosition = 0
 let terminal_j = $("#term-container");
 
 
+let historyArray = [""];
 LineAddEventListener();
 
-let historyArray = [""];
-
-
 window.onload = function () {
-    currentLine.value = "";
+    currentLine.val("");
 }
 
 
 
 //Focus the current line whenever clicking in the terminal
-terminal.addEventListener("click", fonction);
-//terminal.addEventListener("clicsk", DragTerminal);
-
-function fonction() {
+terminal.on("click", () => {
     currentLine.focus();
-};
+})
+//terminal.on("click", DragTerminal());
 
 function LineAddEventListener() {
     //Event listener when pressing the enter key while writing in the terminal
-    currentLine.addEventListener('keydown', (e) => {
+    currentLine.on("keydown", (e) => {
         if (e.key === "Enter") {
             //console.log(e);
             TerminalHistoryOnEnter();
             TerminalOnEnter();
 
-            currentLine = document.getElementById('currentCmd');
+            currentLine = $('#currentCmd');
             currentLine.focus();
             LineAddEventListener();
+            if (historyArray.length >= 21){
+                historyArray.splice(20,1)
+            }
         }
         if (e.key === "ArrowUp" && historyPosition < (historyArray.length - 1)) {
+            e.preventDefault()
             historyPosition++;
-            currentLine.value = historyArray[historyPosition];
+            historyRender();
         }
         if (e.key === "ArrowDown" && historyPosition > 0) {
+            e.preventDefault()
             historyPosition--;
-            currentLine.value = historyArray[historyPosition];
+            historyRender();
         }
     })
 }
@@ -60,11 +61,14 @@ function TerminalOnEnter() {
 
 function TerminalHistoryOnEnter() {
     historyArray.shift();
-    historyArray.unshift(currentLine.value);
+    historyArray.unshift(currentLine.val());
     historyArray.unshift("");
     console.log(historyArray);
 }
 
+function historyRender(){
+    currentLine.val(historyArray[historyPosition])
+}
 
 
 
@@ -84,7 +88,7 @@ function CheckUserInput() {
     $('#term-container').append(termAnswer);
     var textAnswer = $('<p class="term_text answers">unknown command</p>');
     // Check the user input and execute the corresponding command
-    switch (currentLine.value){
+    switch (currentLine.val()){
         case "help":
             textAnswer = $('<p class="term_text answers">available functions : <br>help <br>return <br>link <br>reload <br>clear</p>');
             break;
@@ -101,7 +105,7 @@ function CheckUserInput() {
         case "reload":
             textAnswer = $('<p class="term_text answers">reloading the page...</p>');
             setTimeout(function(){
-                document.location.reload();
+                location.reload();
             },2000);
             break;
     }
