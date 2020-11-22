@@ -81,7 +81,7 @@ main{
     display: flex;
     color: var(--clear-color);
     width: fit-content;
-    transform: translate(-470px, 0);
+    transform: translate(0, 0); /*-470px */
     transition: 1s;
     z-index: 1;
 }
@@ -125,6 +125,10 @@ main{
     margin-right: 20px;
     font-size: 30px;
     transition: 0.2s;
+}
+
+.levels{
+    color: var(--clear-color);
 }
 
 .right-menu{
