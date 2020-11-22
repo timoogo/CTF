@@ -1,7 +1,7 @@
 $('.chapter-content').hide();
 let rightmenu = $('.right-menu');
 let chaptermenu = $('.chapter-menu');
-
+let circles = $('.circle');
 var TDLclick = $('#upperTDL');
 var TDLlist = $('#lowerTDL');
 var TDL = $('#toDoList');
@@ -32,3 +32,7 @@ function pullDown(){
 // var leTacosCinqViandesCinqSauceSHINY = TDLclick.addEventListener("click", function(){TDL.style.bottom == '0px' ? (setTimeout(function(){TDLlist.style.display = 'none'} ,1000), TDL.style.bottom = '-420px') : (TDL.style.bottom = '0px', TDLlist.style.display = 'block');});
 
 var leTacosCinqViandesCinqSauces = TDLclick.on("click", function(){TDL.css("height") == '470px' ? (pullDown()) : (pullUp());});
+
+
+
+

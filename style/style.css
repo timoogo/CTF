@@ -86,10 +86,10 @@ main{
     z-index: 1;
 }
 
-/* .chapter-menu:hover{
+.chapter-menu:hover{
     transform: translate(0,0);
     transition: 0.5s;
-}  */
+} 
 
 .chapter-menu h2{
     font-size: 40px;
@@ -147,9 +147,6 @@ main{
     background-color: var(--dove-grey);
     border-radius: 50%;
 }
-.circle:hover{
-    background-color:var(--solid-green);
-}
 
 /*--------------------------TO DO LIST--------------------------- */
 
@@ -182,12 +179,7 @@ main{
     width: 100%;
     padding-top: 15px;
     height: 420px;
-<<<<<<< HEAD
-    background-color: var(--abbey-color);
-    
-=======
     background-color: #4E5057;
->>>>>>> terminal-ability
 }
 
 li{
