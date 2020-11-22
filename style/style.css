@@ -10,6 +10,15 @@
     --solid-green: #00FF00;
     --blue-bayoux :#51607F;
 }
+
+::-webkit-scrollbar-thumb{
+    background: var(--shark-color);
+}
+
+::-webkit-scrollbar{
+    background: var(--silver-color);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -138,7 +147,15 @@ main{
     transition: 0.2s;
 }
 
+.chapter-content{
+    display: flex;
+    flex-direction: column;
+    margin-left: 24%;
+}
+
 .levels{
+    margin-top: 5px;
+    width: fit-content;
     color: var(--clear-color);
 }
 
