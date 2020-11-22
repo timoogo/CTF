@@ -32,8 +32,8 @@ function LineAddEventListener() {
             currentLine = $('#currentCmd');
             currentLine.focus();
             LineAddEventListener();
-            if (historyArray.length >= 21){
-                historyArray.splice(20,1)
+            if (historyArray.length >= 21) {
+                historyArray.splice(20, 1)
             }
         }
         if (e.key === "ArrowUp" && historyPosition < (historyArray.length - 1)) {
@@ -66,7 +66,7 @@ function TerminalHistoryOnEnter() {
     console.log(historyArray);
 }
 
-function historyRender(){
+function historyRender() {
     currentLine.val(historyArray[historyPosition])
 }
 
@@ -88,9 +88,9 @@ function CheckUserInput() {
     $('#term-container').append(termAnswer);
     let textAnswer = $('<p class="term_text answers">unknown command</p>');
     // Check the user input and execute the corresponding command
-    switch (currentLine.val()){
+    switch (currentLine.val()) {
         case "help":
-            textAnswer = $('<p class="term_text answers">available functions : <br>help <br>return <br>link <br>reload <br>clear</p>');
+            textAnswer = $('<p class="term_text answers">available functions : <br>help <br>return <br>link <br>reload <br>clear <br>cat <br>ls <br>hack</p>');
             break;
         case "clear":
             textAnswer = ""
@@ -104,9 +104,9 @@ function CheckUserInput() {
             break;
         case "reload":
             textAnswer = $('<p class="term_text answers">reloading the page...</p>');
-            setTimeout(() =>{
+            setTimeout(() => {
                 location.reload();
-            },2000);
+            }, 2000);
             break;
         case "cat mdp.txt" || "type mdp.txt":
             textAnswer = $('<p class="term_text answers">1234</p>');
@@ -114,37 +114,48 @@ function CheckUserInput() {
         case "cat doNotOpenPlz.txt" || "type doNotOpenPlz.txt":
             textAnswer = $('<a class="underline" target="_blank" href="https://cdn.discordapp.com/attachments/555868542843748363/779661281501118504/sa_don_a_refelechir.jpg"><p class="term_text answers">DoNotClicPlz</p></a>');
             break;
-        case "ls" :
+        case "ls":
             textAnswer = $('<p class="term_text answers">mdp.txt<br>doNotOpenPlz.txt</p>');
             break;
-        case "hack 1234" :
-            textAnswer = $('<p class="term_text answers">Good job</p>');
-            let string = ""
-            for(let i = 0; i <3; i++){
-                textAnswer.append()
-            }
-            
-            setTimeout(() =>{
+        case "hack 1234":
+            textAnswer = $('<p class="term_text answers">Good job <span id="dots"></span></p>');
+            let dots = 0;
+            termAnswer.append(textAnswer);
+            dotsAnim($('#dots'),150);
+
+            setTimeout(() => {
                 location.href = "level_1.php";
-            },2000);
+            }, 2000);
             break;
     }
     termAnswer.append(textAnswer);
 }
 
-function DragTerminal(){
+function DragTerminal() {
     mult = 1.8;
     terminal_j.draggable({
         containment: "#main-container",
-        cursor:"grabbing",
+        cursor: "grabbing",
         // drag: function (event, ui) {
         //     ui.position.top += (ui.offset.top - ui.originalPosition.top) * mult;
         //     ui.position.left += (ui.offset.left - ui.originalPosition.left) * mult;
         // }
-    }); 
+    });
 
-   
+
 }
 $("#term-container").resizable();
 
 DragTerminal();
+
+function dotsAnim(parent,interval){
+    setInterval(() => {
+        if (dots < 3) {
+            parent.append(".");
+            dots++;
+        } else {
+            parent.html("");
+            dots = 0;
+        }
+    }, interval);
+}
