@@ -68,7 +68,18 @@ main{
 }
 
 
-
+.levelDescription{
+    margin-top: 30px;
+    margin-bottom: 50px;
+    padding: 10px 10px;
+    width: 900px;
+    border: 4px solid #4E5057;
+    height: auto;
+    background-color: var(--dove-grey);
+    box-shadow: 1px 5px 10px black;
+    font-family: 'VT323', monospace;
+    font-size: 23px;
+}
 
 
 
@@ -81,7 +92,7 @@ main{
     display: flex;
     color: var(--clear-color);
     width: fit-content;
-    transform: translate(0, 0); /*-470px */
+    transform: translate(-470px, 0); /*-470px*/
     transition: 1s;
     z-index: 1;
 }

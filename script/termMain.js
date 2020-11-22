@@ -104,8 +104,28 @@ function CheckUserInput() {
             break;
         case "reload":
             textAnswer = $('<p class="term_text answers">reloading the page...</p>');
-            setTimeout(function(){
+            setTimeout(() =>{
                 location.reload();
+            },2000);
+            break;
+        case "cat mdp.txt" || "type mdp.txt":
+            textAnswer = $('<p class="term_text answers">1234</p>');
+            break;
+        case "cat doNotOpenPlz.txt" || "type doNotOpenPlz.txt":
+            textAnswer = $('<a class="underline" target="_blank" href="https://cdn.discordapp.com/attachments/555868542843748363/779661281501118504/sa_don_a_refelechir.jpg"><p class="term_text answers">DoNotClicPlz</p></a>');
+            break;
+        case "ls" :
+            textAnswer = $('<p class="term_text answers">mdp.txt<br>doNotOpenPlz.txt</p>');
+            break;
+        case "hack 1234" :
+            textAnswer = $('<p class="term_text answers">Good job</p>');
+            let string = ""
+            for(let i = 0; i <3; i++){
+                textAnswer.append()
+            }
+            
+            setTimeout(() =>{
+                location.href = "level_1.php";
             },2000);
             break;
     }

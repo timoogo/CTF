@@ -5,15 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="../style/style.css">
     <!-- <link rel="stylesheet" href="style/termStyle.css"> -->
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css" />
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
-    <script src="script/jquery.js"></script>
-    <script src="script/jquery-ui.min.js"></script>
+    <script src="../script/jquery.js"></script>
+    <script src="../script/jquery-ui.min.js"></script>
 
     <title>Capture The Flag</title>
 </head>
@@ -41,8 +41,8 @@
                 <div class="chapter">
                     <p class="chapter-name"><i class="fas fa-angle-right"></i>Chapitre 1</p>
                     <div class="chapter-content">
-                        <a class="levels" href="levels/level_tuto.php">Niveau 1</a>
-                        <a class="levels" href="levels/level_tuto.php">Niveau 1</a>
+                        <a class="levels" href="level_1.php">Niveau 1</a>
+                        <a class="levels" href="level_1.php">Niveau 1</a>
                     </div>
                     <hr>
                 </div>
@@ -83,6 +83,11 @@
         </div>
 
         <div id="main-container">
+            <div class="levelDescription">
+                <p>Bienvenue sur notre site de CTF ! Le premier niveau consiste à se familiariser avec le DOS</p>
+                <p>Pour commencer vous pouvez écrire la commande help pour découvrir les différentes commandes</p>
+                <p>Votre but sera de trouver les flags pour pouvoir finir le niveaux</p>
+            </div>
             <div id="term-container">
                 <div class="line answers" id="currentLine">
                     <p class="term_text answers">C:\CTF\DOS></p>
@@ -90,8 +95,6 @@
                 </div>
             </div>
         </div>
-
-
     </main>
     <footer>
         <div id="toDoList">
@@ -118,8 +121,8 @@
             </div>
         </div>
     </footer>
-    <script src="script/main.js"></script>
-    <script src="script/termMain.js"></script>
+    <script src="../script/main.js"></script>
+    <script src="../script/termMain.js"></script>
 </body>
 
 </html>
