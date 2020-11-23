@@ -84,9 +84,9 @@
 
         <div id="main-container">
             <div class="levelDescription">
-                <p>Bienvenue sur notre site de CTF ! Le premier niveau consiste à se familiariser avec le DOS</p>
-                <p>Pour commencer vous pouvez écrire la commande help pour découvrir les différentes commandes</p>
-                <p>Votre but sera de trouver les flags pour pouvoir finir le niveaux</p>
+                <p>Bienvenue sur notre site de CTF ! Le premier niveau consiste à se familiariser avec le DOS.</p>
+                <p>Pour commencer vous pouvez écrire la commande help pour découvrir les différentes commandes. Votre but sera de trouver les flags pour pouvoir finir le niveau</p>
+                
             </div>
             <div id="term-container">
                 <div class="line answers" id="currentLine">
