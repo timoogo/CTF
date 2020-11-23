@@ -66,6 +66,10 @@ main{
     height: 95vh;
 }
 
+.profil-info{
+    width: fit-content;
+    margin: 10px auto;
+}
 
 
 

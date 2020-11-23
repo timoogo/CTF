@@ -1,4 +1,9 @@
 <?php
+
+if(isset($_SESSION['user'])){ //empeche de venir sur cette page si compte déjà créé
+    header('location:' . ROOT . '/Views/profil.php');
+}
+
 if(!empty($_POST)){
     if (!empty($_POST['pseudo']) && !empty($_POST['pass'])) {
         $pseudo = trim(htmlspecialchars($_POST['pseudo'])); // supression des espaces et protections aux injections
