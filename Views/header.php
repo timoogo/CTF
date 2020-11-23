@@ -23,7 +23,7 @@
     <header>
         <nav>
           <div class="logo">
-            <a href="#">Accueil</a>
+            <a href="<?=ROOT?>">Accueil</a>
           </div>
          <ul>
              <li><a href="Views/profil.php" class="my-account">Mon compte</a></li>
