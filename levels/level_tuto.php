@@ -41,7 +41,7 @@
                 <div class="chapter">
                     <p class="chapter-name"><i class="fas fa-angle-right"></i>Chapitre 1</p>
                     <div class="chapter-content">
-                        <a class="levels" href="level_1.php">Niveau 1</a>
+                        <a class="levels" href="level_tuto.php">Tutoriel</a>
                         <a class="levels" href="level_1.php">Niveau 1</a>
                     </div>
                     <hr>
