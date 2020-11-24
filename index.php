@@ -93,7 +93,7 @@
 
 
     </main>
-    <footer>
+    <footer style="height: 0px;">
         <div id="toDoList">
             <div id="upperTDL">
                 <h3>To-Do List</h3>

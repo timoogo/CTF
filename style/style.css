@@ -220,10 +220,11 @@ section{
     padding: 5px 20px;
     background-color: var(--shark-color);
     border: solid 3px rgb(24, 24, 24);
+    width: 270px;
 }
 
 .accueil a{
-    font-size:27px;
+    font-size:26px;
     color: var(--clear-color);
 }
 
