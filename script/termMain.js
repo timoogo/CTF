@@ -117,6 +117,9 @@ function CheckUserInput() {
         case "ls":
             textAnswer = $('<p class="term_text answers">mdp.txt<br>doNotOpenPlz.txt</p>');
             break;
+        case "hack":
+            textAnswer = $('<p class="term_text answers">You need to enter the right password</p>');
+            break;
         case "hack 1234":
             textAnswer = $('<p class="term_text answers">Good job <span id="dots"></span></p>');
             let dots = 0;
