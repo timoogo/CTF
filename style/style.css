@@ -10,6 +10,15 @@
     --solid-green: #00FF00;
     --blue-bayoux :#51607F;
 }
+
+::-webkit-scrollbar-thumb{
+    background: var(--shark-color);
+}
+
+::-webkit-scrollbar{
+    background: var(--silver-color);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -68,7 +77,18 @@ main{
 }
 
 
-
+.levelDescription{
+    margin-top: 30px;
+    margin-bottom: 50px;
+    padding: 10px 10px;
+    width: 900px;
+    border: 4px solid #4E5057;
+    height: auto;
+    background-color: var(--dove-grey);
+    box-shadow: 1px 5px 10px black;
+    font-family: 'VT323', monospace;
+    font-size: 23px;
+}
 
 
 
@@ -81,15 +101,15 @@ main{
     display: flex;
     color: var(--clear-color);
     width: fit-content;
-    transform: translate(-470px, 0);
+    transform: translate(-470px, 0); /*-470px*/
     transition: 1s;
     z-index: 1;
 }
 
-/* .chapter-menu:hover{
+.chapter-menu:hover{
     transform: translate(0,0);
     transition: 0.5s;
-}  */
+} 
 
 .chapter-menu h2{
     font-size: 40px;
@@ -127,6 +147,18 @@ main{
     transition: 0.2s;
 }
 
+.chapter-content{
+    display: flex;
+    flex-direction: column;
+    margin-left: 24%;
+}
+
+.levels{
+    margin-top: 5px;
+    width: fit-content;
+    color: var(--clear-color);
+}
+
 .right-menu{
     display: flex;
     flex-direction: column;
@@ -146,9 +178,6 @@ main{
     height: 50px;
     background-color: var(--dove-grey);
     border-radius: 50%;
-}
-.circle:hover{
-    background-color:var(--solid-green);
 }
 
 /*--------------------------TO DO LIST--------------------------- */
