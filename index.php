@@ -31,7 +31,7 @@
         </nav>
     </header>
 
-
+    <main>
     <div class="main-container">
         <h1> Bienvenue sur notre CTF !</h1>
         <div class="title-container">L'invite de commande</div>

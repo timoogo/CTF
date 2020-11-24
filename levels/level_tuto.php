@@ -97,6 +97,7 @@
         </div>
     </main>
     <footer style="height: 0px;">
+    </footer>
         <div id="toDoList">
             <div id="upperTDL">
                 <h3>To-Do List</h3>
@@ -120,7 +121,6 @@
                 </ol>
             </div>
         </div>
-    </footer>
     <script src="../script/main.js"></script>
     <script src="../script/termMain.js"></script>
 </body>
