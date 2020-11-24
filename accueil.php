@@ -57,7 +57,7 @@
                     <div class="chapter titre-accueil">
                         <p class="chapter-name">
                             <i class="fas fa-angle-right" style="transform: rotate(0deg);"></i>
-                            Chapitre 1
+                            Chapitre 2
                         </p>
                         <div class="chapter-content accueil">
                             <a href="">Niveau tutoriel</a>
@@ -73,7 +73,7 @@
                     <div class="chapter titre-accueil">
                         <p class="chapter-name">
                             <i class="fas fa-angle-right" style="transform: rotate(0deg);"></i>
-                            Chapitre 1
+                            Chapitre 3
                         </p>
                         <div class="chapter-content accueil">
                             <a href="">Niveau tutoriel</a>
@@ -89,7 +89,7 @@
                     <div class="chapter titre-accueil">
                         <p class="chapter-name">
                             <i class="fas fa-angle-right" style="transform: rotate(0deg);"></i>
-                            Chapitre 1
+                            Chapitre 4
                         </p>
                         <div class="chapter-content accueil">
                             <a href="">Niveau tutoriel</a>
