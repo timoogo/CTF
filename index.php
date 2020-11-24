@@ -22,7 +22,7 @@
     <header>
         <nav>
             <div class="logo">
-                <a href="#">Accueil</a>
+                <a href="accueil.php">Accueil</a>
             </div>
             <ul>
                 <li><a href="#" class="my-account">Mon compte</a></li>
