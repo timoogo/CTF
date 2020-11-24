@@ -1,36 +1,8 @@
-<!DOCTYPE html>
-<html lang="fr">
+<?php
+include "../include/init.php";
+include "../Views/header.php";
+?>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="../style/style.css">
-    <!-- <link rel="stylesheet" href="style/termStyle.css"> -->
-
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css" />
-
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
-    <script src="../script/jquery.js"></script>
-    <script src="../script/jquery-ui.min.js"></script>
-
-    <title>Capture The Flag</title>
-</head>
-
-<body>
-    <header>
-        <nav>
-            <div class="logo">
-                <a href="#">Accueil</a>
-            </div>
-            <ul>
-                <li><a href="#" class="my-account">Mon compte</a></li>
-                <li><a href="#">A propos</a></li>
-            </ul>
-
-        </nav>
-    </header>
 
 
 
@@ -96,12 +68,11 @@
             </div>
         </div>
     </main>
-    <footer style="height: 0px;">
-        <div id="toDoList">
-            <div id="upperTDL">
-                <h3>To-Do List</h3>
-            </div>
-            <div id="lowerTDL">
+    <div id="toDoList">
+        <div id="upperTDL">
+            <h3>To-Do List</h3>
+        </div>
+        <div id="lowerTDL">
                 <ol>
                     <li>
                         <hr>
@@ -120,9 +91,11 @@
                 </ol>
             </div>
         </div>
+    <footer style="height: 0px;">
     </footer>
-    <script src="../script/main.js"></script>
-    <script src="../script/termMain.js"></script>
+
+    <script src="<?= ROOT ?>/script/main.js"></script>
+    <script src="<?= ROOT ?>/script/termMain.js"></script>
 </body>
 
 </html>
