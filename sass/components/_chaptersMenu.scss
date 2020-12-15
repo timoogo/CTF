@@ -1,0 +1,91 @@
+.chapter-menu{
+    min-height: 95vh;
+    max-height: 95vh;
+    position: absolute;
+    display: flex;
+    color: $clearColor;
+    width: fit-content;
+    transform: translate(-470px, 0); /*-470px*/
+    transition: 1s;
+    z-index: 1;
+
+    h2{
+        font-size: 40px;
+        margin-bottom: 100px;
+        margin-left: 60px;
+    }
+
+    .left-menu{
+        padding-top: 50px;
+        background-color: $blueBayoux;
+        width: 470px;
+        height: 95vh;
+        overflow: auto;
+    }
+
+    .chapter{
+        padding: 0 60px;
+        font-size: 30px;
+
+        hr{
+            margin: 20px 0;
+            border: none;
+            height: 2px;
+            background-color: $clearColor;
+        }
+
+        .chapter-content{
+            display: flex;
+            flex-direction: column;
+            margin-left: 24%;
+
+            .levels{
+                margin-top: 5px;
+                width: fit-content;
+                color: $clearColor;
+            }
+        }
+        
+        .chapter-name:hover{
+            cursor: pointer;
+        }
+
+    }
+
+    .right-menu{
+        display: flex;
+        flex-direction: column;
+        background-color: $abbeyColor ;
+        width: 70px;
+        justify-content: center;
+        align-items: center;
+        max-height: 95vh;
+
+        .circle{
+            margin: 15px 0px;
+            width: 50px;
+            height: 50px;
+            background-color: $doveGrey;
+            border-radius: 50%;
+        }
+    }
+
+    .right-menu:hover{
+        cursor: pointer;
+    }
+}
+
+.chapter-menu:hover{
+    transform: translate(0,0);
+    transition: 0.5s;
+} 
+
+.chapter-name{
+    font-size: 30px;
+
+    i {
+        margin-right: 20px;
+        font-size: 30px;
+        transition: 0.2s;
+    }
+} 

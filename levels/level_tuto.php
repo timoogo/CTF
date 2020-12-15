@@ -2,10 +2,6 @@
 include "../include/init.php";
 include "../Views/header.php";
 ?>
-
-
-
-
     <main>
         <div class="chapter-menu">
             <div class="left-menu">
@@ -68,21 +64,11 @@ include "../Views/header.php";
             </div>
         </div>
     </main>
-<<<<<<< HEAD
-    <footer style="height: 0px;">
-    </footer>
-        <div id="toDoList">
-            <div id="upperTDL">
-                <h3>To-Do List</h3>
-            </div>
-            <div id="lowerTDL">
-=======
     <div id="toDoList">
         <div id="upperTDL">
             <h3>To-Do List</h3>
         </div>
         <div id="lowerTDL">
->>>>>>> 33f2165576092b5c91af3155e870acedbbddc4ab
                 <ol>
                     <li>
                         <hr>
@@ -101,16 +87,11 @@ include "../Views/header.php";
                 </ol>
             </div>
         </div>
-<<<<<<< HEAD
-    <script src="../script/main.js"></script>
-    <script src="../script/termMain.js"></script>
-=======
     <footer style="height: 0px;">
     </footer>
 
     <script src="<?= ROOT ?>/script/main.js"></script>
     <script src="<?= ROOT ?>/script/termMain.js"></script>
->>>>>>> 33f2165576092b5c91af3155e870acedbbddc4ab
 </body>
 
 </html>
