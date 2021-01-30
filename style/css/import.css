@@ -250,6 +250,42 @@ main .main-container .sections-container section .titre-accueil .accueil a {
   text-decoration: underline #FFFFFF;
 }
 
+.notepad {
+  position: absolute;
+  left: 10%;
+  top: calc(50% - 260px);
+  font-weight: 500;
+  font-size: 25px;
+  font-family: "VT323", monospace;
+  padding: 10px;
+  line-height: 27px;
+  height: 490px;
+  border-radius: 5px;
+  border: solid 10px #4E5057;
+  box-shadow: 1px 5px 10px #000000;
+}
+.notepad-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: #2c2e33;
+  position: absolute;
+  right: 405px;
+  bottom: 0px;
+  cursor: pointer;
+}
+.notepad-btn span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+}
+.notepad-btn span i {
+  height: 39px;
+}
+
 #toDoList {
   position: absolute;
   bottom: 0px;
@@ -308,64 +344,6 @@ main .main-container .sections-container section .titre-accueil .accueil a {
 }
 #toDoList #upperTDL:hover {
   cursor: pointer;
-}
-
-main {
-  width: 100vw;
-  height: 95vh;
-}
-main .main-container {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: #51607F;
-  right: 0;
-}
-main .main-container h1 {
-  height: 35px;
-  width: 100%;
-  margin: 50px 120px;
-  color: #eeeeee;
-}
-main .main-container .title-container {
-  width: 80%;
-  height: 60px;
-  margin: 0 auto;
-  background-color: #232427;
-  color: #ADB9D2;
-  font-size: 30px;
-  padding: 10px 10px;
-}
-main .main-container .sections-container {
-  display: flex;
-  flex-direction: row;
-  width: 80%;
-  height: 200px;
-  margin: 0 auto;
-  background-color: #2c2e33;
-}
-main .main-container .sections-container section {
-  width: 25%;
-  height: 180px;
-  display: flex;
-  justify-content: center;
-  color: #ADB9D2;
-  padding: 15px;
-}
-main .main-container .sections-container section .titre-accueil {
-  padding: 5px 20px;
-  background-color: #2c2e33;
-  border: solid 3px #181818;
-  width: 270px;
-}
-main .main-container .sections-container section .titre-accueil .accueil {
-  display: flex;
-  flex-direction: column;
-  padding: 0 0 0 0 !important;
-}
-main .main-container .sections-container section .titre-accueil .accueil a {
-  font-size: 26px;
-  color: #ADB9D2;
 }
 
 #main-container {

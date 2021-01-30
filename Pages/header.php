@@ -16,6 +16,8 @@
 
     <script src="<?= ROOT ?>/script/jquery.js"></script>
     <script src="<?= ROOT ?>/script/jquery-ui.min.js"></script>
+    <script src="<?= ROOT ?>/script/notepad.js" defer></script>
+
 
     <title>Capture The Flag</title>
 </head>
