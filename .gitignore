@@ -1,3 +1,4 @@
 */.vs/
 include/init.php
 /node_modules
+Components/init.php
