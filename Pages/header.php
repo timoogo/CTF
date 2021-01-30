@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" >
 
-    <link rel="stylesheet" href="<?= ROOT ?>/style/import.css">
+    <link rel="stylesheet" href="<?= ROOT ?>/Style/css/import.css">
 
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">

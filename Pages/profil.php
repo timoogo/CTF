@@ -1,5 +1,5 @@
 <?php
-include '../include/init.php';
+include "../Components/init.php";
 include "header.php";
 
 if (empty($_SESSION['user'])) {

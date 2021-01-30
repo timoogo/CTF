@@ -10,21 +10,21 @@ function browser() {
             baseDir: "./"
         }
     });
-    watch("index.php").on('change', browserSync.reload);
-    watch("style/import.css").on('change', browserSync.reload);
+    watch("./Pages/index.php").on('change', browserSync.reload);
+    watch("./Style/css/import.css").on('change', browserSync.reload);
 }
 
 // Sass (scss -> css)
 function sass(){
-    return src('./sass/import.scss')
+    return src('./Style/sass/import.scss')
     .pipe(gulpSass())
-    .pipe(dest('./style/'))
+    .pipe(dest('./Style/css'))
     .pipe(browserSync.stream());
 }
 
 // Watch Sass
 function watcher(done){
-    watch('./sass/*.scss', sass)
+    watch('./Style/sass/*.scss', sass)
     browserSync.reload();
     done();
 }

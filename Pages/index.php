@@ -1,6 +1,6 @@
 <?php
-include "include/init.php";
-include "Views/header.php";
+include "../Components/init.php";
+include "./header.php";
 ?>
 
 <main>
@@ -16,8 +16,8 @@ include "Views/header.php";
                             Chapitre 1
                         </p>
                         <div class="chapter-content accueil">
-                            <a href="<?= ROOT ?>/levels/level_tuto.php">Niveau tutoriel</a>
-                            <a href="<?= ROOT ?>/levels/level_1.php">Niveau 1</a>
+                            <a href="<?= ROOT ?>/Pages/levels/level_tuto.php">Niveau tutoriel</a>
+                            <a href="<?= ROOT ?>/Pages/levels/level_1.php">Niveau 1</a>
                             <a href="">Niveau 2</a>
                             <a href="">Niveau 3</a>
                         </div>
@@ -29,11 +29,11 @@ include "Views/header.php";
                     <div class="chapter titre-accueil">
                         <p class="chapter-name">
                             <i class="fas fa-angle-right" style="transform: rotate(0deg);"></i>
-                            Chapitre 1
+                            Chapitre 2
                         </p>
                         <div class="chapter-content accueil">
-                            <a href="<?= ROOT ?>/levels/level_tuto.php">Niveau tutoriel</a>
-                            <a href="<?= ROOT ?>/levels/level_1.php">Niveau 1</a>
+                            <a href="<?= ROOT ?>/Pages/levels/level_tuto.php">Niveau tutoriel</a>
+                            <a href="<?= ROOT ?>/Pages/levels/level_1.php">Niveau 1</a>
                             <a href="">Niveau 2</a>
                             <a href="">Niveau 3</a>
                         </div>
@@ -45,11 +45,11 @@ include "Views/header.php";
                     <div class="chapter titre-accueil">
                         <p class="chapter-name">
                             <i class="fas fa-angle-right" style="transform: rotate(0deg);"></i>
-                            Chapitre 1
+                            Chapitre 3
                         </p>
                         <div class="chapter-content accueil">
-                            <a href="<?= ROOT ?>/levels/level_tuto.php">Niveau tutoriel</a>
-                            <a href="<?= ROOT ?>/levels/level_1.php">Niveau 1</a>
+                            <a href="<?= ROOT ?>/Pages/levels/level_tuto.php">Niveau tutoriel</a>
+                            <a href="<?= ROOT ?>/Pages/levels/level_1.php">Niveau 1</a>
                             <a href="">Niveau 2</a>
                             <a href="">Niveau 3</a>
                         </div>
@@ -61,11 +61,11 @@ include "Views/header.php";
                     <div class="chapter titre-accueil">
                         <p class="chapter-name">
                             <i class="fas fa-angle-right" style="transform: rotate(0deg);"></i>
-                            Chapitre 1
+                            Chapitre 4
                         </p>
                         <div class="chapter-content accueil">
-                            <a href="<?= ROOT ?>/levels/level_tuto.php">Niveau tutoriel</a>
-                            <a href="<?= ROOT ?>/levels/level_1.php">Niveau 1</a>
+                            <a href="<?= ROOT ?>/Pages/levels/level_tuto.php">Niveau tutoriel</a>
+                            <a href="<?= ROOT ?>/Pages/levels/level_1.php">Niveau 1</a>
                             <a href="">Niveau 2</a>
                             <a href="">Niveau 3</a>
                         </div>
@@ -81,7 +81,7 @@ include "Views/header.php";
     <p> &copy CTF, 2020 - Tous droits réservés </p>
 </footer>
 
-<script src="script/main.js"></script>
+<script src="../script/main.js"></script>
 </body>
 
 </html>

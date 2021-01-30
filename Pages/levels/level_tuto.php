@@ -1,6 +1,6 @@
 <?php
-include "../include/init.php";
-include "../Views/header.php";
+include "../../Components/init.php";
+include "../header.php";
 ?>
     <main>
         <div class="chapter-menu">
