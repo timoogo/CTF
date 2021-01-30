@@ -1,0 +1,33 @@
+#main-container{
+    width: 100%;
+    max-width: 100vw;
+    max-height: 95vh;
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: rgb(79, 95, 126); */
+    padding-left: 70px;
+    background: linear-gradient(270deg, #03045e,#023e8a, #0077b6, #33415c, #4d194d);
+    background-size: 400% 400%;
+    -webkit-animation: gradiant 16s ease infinite;
+    -moz-animation: gradiant 16s ease infinite;
+    animation: gradiant 16s ease infinite;
+}
+
+
+ @-webkit-keyframes gradiant {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@-moz-keyframes gradiant {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@keyframes gradiant {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}

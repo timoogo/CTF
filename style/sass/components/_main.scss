@@ -1,0 +1,69 @@
+main{
+    width: 100vw;
+    height: 95vh;
+
+    .main-container{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: $blueBayoux;
+        right: 0;
+
+        h1{
+            height: 35px;
+            width: 100%;
+            margin: 50px 120px;
+            color: $galeryColor;
+        }
+
+        .title-container{
+            width: 80%;
+            height: 60px;
+            margin: 0 auto;
+            background-color: $darkColor;
+            color: $clearColor;
+            font-size: 30px;
+            padding: 10px 10px;
+        }
+
+        .sections-container{
+            display: flex;
+            flex-direction: row;
+            width: 80%;
+            height: 200px;
+            margin: 0 auto;
+            background-color: $sharkColor;
+    
+            section{
+                width: 25%;
+                height: 180px;
+                display: flex;
+                justify-content: center;
+                color: $clearColor;
+                padding: 15px;
+    
+                .titre-accueil{
+                    padding: 5px 20px;
+                    background-color: $sharkColor;
+                    border: solid 3px rgb(24, 24, 24);
+                    width: 270px;
+                    
+                    .accueil{
+                        display: flex;
+                        flex-direction: column;
+                        padding:0 0 0 0 !important;
+    
+                        a{
+                            font-size:26px;
+                            color: $clearColor;
+                        }
+    
+                    }
+    
+                }
+    
+            }
+    
+        }
+    }
+}

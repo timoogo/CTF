@@ -1,0 +1,40 @@
+header{
+    min-height: 5vh;
+    width: 100%;
+    background-color: $sharkColor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $clearColor;
+    position: relative;
+    top: 0%;
+    z-index: 10;
+
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 80%;
+    
+        .logo, ul{
+            align-items: center;
+            display: flex;
+        }
+    
+        a{
+            color: $clearColor;
+        }
+    
+        ul{
+            display: flex;
+            align-content: center;
+    
+            li{
+                margin: auto 3rem;
+            }
+        }
+    }
+    
+}
+
+
