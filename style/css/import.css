@@ -251,9 +251,6 @@ main .main-container .sections-container section .titre-accueil .accueil a {
 }
 
 .notepad {
-  position: absolute;
-  left: 10%;
-  top: calc(50% - 260px);
   font-weight: 500;
   font-size: 25px;
   font-family: "VT323", monospace;
@@ -263,6 +260,8 @@ main .main-container .sections-container section .titre-accueil .accueil a {
   border-radius: 5px;
   border: solid 10px #4E5057;
   box-shadow: 1px 5px 10px #000000;
+  outline: none;
+  resize: none;
 }
 .notepad-btn {
   display: flex;
@@ -284,6 +283,13 @@ main .main-container .sections-container section .titre-accueil .accueil a {
 }
 .notepad-btn span i {
   height: 39px;
+}
+
+.dragNote {
+  position: absolute;
+  left: 10%;
+  top: calc(50% - 260px);
+  padding: 10px;
 }
 
 #toDoList {
