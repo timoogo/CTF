@@ -24,10 +24,10 @@
     <header>
         <nav>
           <div class="logo">
-            <a href="<?=ROOT?>">Accueil</a>
+            <a href="<?=ROOT?>/Pages/">Accueil</a>
           </div>
          <ul>
-             <li><a href="<?=ROOT?>/Views/profil.php" class="my-account">Mon compte</a></li>
+             <li><a href="<?=ROOT?>/Pages/profil.php" class="my-account">Mon compte</a></li>
              <li><a href="#">A propos</a></li>
          </ul>
 
