@@ -36,7 +36,8 @@ header nav {
   justify-content: space-between;
   width: 80%;
 }
-header nav .logo, header nav ul {
+header nav .logo,
+header nav ul {
   align-items: center;
   display: flex;
 }
@@ -49,6 +50,25 @@ header nav ul {
 }
 header nav ul li {
   margin: auto 3rem;
+}
+header nav div {
+  display: flex;
+}
+header nav input[type=checkbox] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  outline: none;
+  border-radius: 30px;
+  height: 30px;
+  width: 70px;
+  background: green;
+}
+header nav input[type=checkbox]:hover {
+  cursor: pointer;
+}
+header nav input[type=checkbox]:checked {
+  background: red;
 }
 
 main {
@@ -418,6 +438,10 @@ main .main-container .sections-container section .titre-accueil .accueil a {
     background-position: 0% 50%;
   }
 }
+.no-bcg {
+  background: #fefefe !important;
+}
+
 footer {
   display: flex;
   justify-content: center;

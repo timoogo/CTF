@@ -1,4 +1,4 @@
-header{
+header {
     min-height: 5vh;
     width: 100%;
     background-color: $sharkColor;
@@ -10,31 +10,56 @@ header{
     top: 0%;
     z-index: 10;
 
-    nav{
+    nav {
         display: flex;
         align-items: center;
         justify-content: space-between;
         width: 80%;
-    
-        .logo, ul{
+
+        .logo,
+        ul {
             align-items: center;
             display: flex;
         }
-    
-        a{
+
+        a {
             color: $clearColor;
         }
-    
-        ul{
+
+        ul {
             display: flex;
             align-content: center;
-    
-            li{
+
+            li {
                 margin: auto 3rem;
             }
         }
+
+        div {
+            display: flex;
+        }
+
+        input[type=checkbox] {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            -ms-appearance: none;
+            outline: none;
+
+            border-radius: 30px;
+            height: 30px;
+            width: 70px;
+            background: green;
+
+            &:hover{
+                cursor: pointer;
+            }
+
+            &:checked{
+                background: red;
+            }
+        }
+
+
     }
-    
+
 }
-
-

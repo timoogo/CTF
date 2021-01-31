@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="<?= ROOT ?>/Style/css/import.css">
 
@@ -23,14 +23,18 @@
 <body>
     <header>
         <nav>
-          <div class="logo">
-            <a href="<?=ROOT?>">Accueil</a>
-          </div>
-         <ul>
-             <li><a href="<?=ROOT?>/Views/profil.php" class="my-account">Mon compte</a></li>
-             <li><a href="#">A propos</a></li>
-         </ul>
+            <div class="logo">
+                <a href="<?= ROOT ?>">Accueil</a>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="<?= ROOT ?>/Views/profil.php" class="my-account">Mon compte</a></li>
+                    <li><a href="#">A propos</a></li>
+                </ul>
+                <div>
+                    <input type="checkbox" id="toggle-bcg">
+                </div>
 
+            </div>
         </nav>
     </header>
-    
