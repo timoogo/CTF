@@ -17,7 +17,7 @@ function dragNotePad() {
         cursor      : "move",
         delay       : 100,
         scroll      : false,
-        cancel: "text",
+        cancel      : "text",
         containment : "#main-container",
     })
 }
