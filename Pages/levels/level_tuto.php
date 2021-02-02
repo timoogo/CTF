@@ -53,8 +53,8 @@ include "../header.php";
 
         <div id="main-container">
             <div class="levelDescription">
-                <p>Bienvenue sur notre site de CTF ! Le premier niveau consiste à se familiariser avec le DOS.</p>
-                <p>Pour commencer vous pouvez écrire la commande help pour découvrir les différentes commandes. Votre but sera de trouver les flags pour pouvoir finir le niveau</p>
+                <p data-tooltip-container data-tooltip-label="Try help command if you are lost">Bienvenue sur notre site de CTF ! Le premier niveau consiste à se familiariser avec le DOS.</p>
+                <p data-tooltip-container data-tooltip-label="Try help command if you are lost">Pour commencer vous pouvez écrire la commande help pour découvrir les différentes commandes. Votre but sera de trouver les flags pour pouvoir finir le niveau</p>
                 
             </div>
             <div id="term-container">
@@ -104,6 +104,7 @@ include "../header.php";
     <footer style="height: 0px;">
     </footer>
 
+    <script src="<?= ROOT ?>/script/toolTip.js"></script>
     <script src="<?= ROOT ?>/script/main.js"></script>
     <script src="<?= ROOT ?>/script/termMain.js"></script>
 </body>
