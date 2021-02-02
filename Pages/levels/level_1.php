@@ -1,6 +1,9 @@
 <?php
 include "../../Components/init.php";
 include "../header.php";
+include "../wip.php";
 ?>
 
-<h1 style="color: black;">Coming soon</h1>
+<script src="<?= ROOT ?>/script/toolTip.js"></script>
+</body>
+</html>

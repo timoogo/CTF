@@ -90,7 +90,7 @@ function CheckUserInput() {
     // Check the user input and execute the corresponding command
     switch (currentLine.val()) {
         case "help":
-            textAnswer = $('<p class="term_text answers">available functions : <br>help <br>return <br>link <br>reload <br>clear <br>cat <br>ls <br>hack</p>');
+            textAnswer = $('<p class="term_text answers">available functions : <br>help : Show every commands<br>return : This is the return function<br>link : Give you a link<br>reload : Reload the page<br>clear : Clear the terminal<br>cat : Navigate through folders<br>ls : Show every files<br>hack : Permit you to acces next level</p>');
             break;
         case "clear":
             textAnswer = ""
