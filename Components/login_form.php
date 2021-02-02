@@ -17,9 +17,10 @@ if(!empty($_POST)){
         if ($query->rowCount() > 0) { //alors on a trouvé un user
             $db_infos = $query->fetch(PDO::FETCH_ASSOC);
             if (password_verify($pass, $db_infos['user_password'])) {
+                $_SESSION['user']['id'] = $db_infos['user_id'];
                 $_SESSION['user']['pseudo'] = $db_infos['user_username'];
                 $_SESSION['user']['email'] = $db_infos['user_email'];
-                header('location:' . ROOT . '/Views/profil.php');
+                header('location:' . ROOT . '/Pages/profil.php');
             } else {
                 echo '<div class="errors">Identifiants incorrects</div>';
             }
