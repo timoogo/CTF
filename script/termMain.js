@@ -125,6 +125,15 @@ function CheckUserInput() {
             termAnswer.append(textAnswer);
             dotsAnim($('#dots'),150);
 
+            let level = $('main').attr('data-id');
+            console.log(level);
+
+            $.ajax({
+                url: '../complete.php',
+                method: "POST",
+                data: {level}
+            });
+
             setTimeout(() => {
                 location.href = "level_1.php";
             }, 2000);
