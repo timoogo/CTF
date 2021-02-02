@@ -63,8 +63,21 @@ include "../header.php";
                     <input name="command" type="text" class="term answers" id="currentCmd">
                 </div>
             </div>
+
+            <div class="dragNote">
+                <textarea wrap="hard" name="notepad" id="notepad" class="notepad" cols="30" rows="10" style="display: none;"></textarea>
+            </div>
+
+            <div class="notepad-btn">
+                <span style="font-size: 40px; color: #eeeeee;">
+                    <i class="far fa-sticky-note" ></i>
+                </span>
+            </div>
+
         </div>
     </main>
+
+
     <div id="toDoList">
         <div id="upperTDL">
             <h3>To-Do List</h3>
