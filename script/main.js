@@ -29,6 +29,10 @@ function pullDown(){
     } 
 }
 
+$('#toggle-bcg').on('click', function(){
+    $('#main-container').toggleClass('no-bcg');
+});
+
 // var leTacosCinqViandesCinqSauceSHINY = TDLclick.addEventListener("click", function(){TDL.style.bottom == '0px' ? (setTimeout(function(){TDLlist.style.display = 'none'} ,1000), TDL.style.bottom = '-420px') : (TDL.style.bottom = '0px', TDLlist.style.display = 'block');});
 
 var leTacosCinqViandesCinqSauces = TDLclick.on("click", function(){TDL.css("height") == '470px' ? (pullDown()) : (pullUp());});
