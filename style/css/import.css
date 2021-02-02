@@ -68,7 +68,7 @@ header nav input[type=checkbox]:hover {
   cursor: pointer;
 }
 header nav input[type=checkbox]:checked {
-  background: red;
+  background: #aa0d0d;
 }
 
 main {
@@ -423,7 +423,7 @@ main .main-container .sections-container section .titre-accueil .accueil a {
   }
 }
 .no-bcg {
-  background: #fefefe !important;
+  background: #51607F !important;
 }
 
 footer {
