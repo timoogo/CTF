@@ -1,7 +1,4 @@
-.notepad{
-    position: absolute;
-    left: 10%;
-    top: calc(50% - 260px);
+.notepad{ 
     font-weight: 500;
     font-size: 25px;
     font-family: "VT323", monospace;
@@ -11,7 +8,8 @@
     border-radius: 5px;
     border: solid 10px #4E5057;
     box-shadow: 1px 5px 10px #000000;
-    
+    outline: none;
+    resize: none;
     
 
     &-btn{
@@ -37,4 +35,12 @@
             }
         }
     }
+}
+
+
+.dragNote{
+    position: absolute;
+    left: 10%;
+    top: calc(50% - 260px);
+    padding: 10px;
 }

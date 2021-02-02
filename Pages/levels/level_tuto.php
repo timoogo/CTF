@@ -63,7 +63,9 @@ include "../header.php";
                 </div>
             </div>
 
-            <textarea wrap="hard" name="notepad" class="notepad" cols="30" rows="10" style="display: none;"></textarea>
+            <div class="dragNote">
+                <textarea wrap="hard" name="notepad" id="notepad" class="notepad" cols="30" rows="10" style="display: none;"></textarea>
+            </div>
 
             <div class="notepad-btn">
                 <span style="font-size: 40px; color: #eeeeee;">
