@@ -122,9 +122,17 @@ function CheckUserInput() {
             break;
         case "hack 1234":
             textAnswer = $('<p class="term_text answers">Good job <span id="dots"></span></p>');
-            let dots = 0;
             termAnswer.append(textAnswer);
             dotsAnim($('#dots'),150);
+
+            let level = $('main').attr('data-id');
+            console.log(level);
+
+            $.ajax({
+                url: '../complete.php',
+                method: "POST",
+                data: {level}
+            });
 
             setTimeout(() => {
                 location.href = "level_1.php";

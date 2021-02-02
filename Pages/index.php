@@ -14,10 +14,11 @@ include "./header.php";
                         <p class="chapter-name">
                             <i class="fas fa-angle-right" style="transform: rotate(0deg);"></i>
                             Chapitre 1
+                            <?php if(!empty($_SESSION) && $_SESSION['user']['progress'] >= 4) : echo "<i class='fas fa-check-circle'></i>"; endif; ?>
                         </p>
                         <div class="chapter-content accueil">
-                            <a href="<?= ROOT ?>/Pages/levels/level_tuto.php">Niveau tutoriel</a>
-                            <a href="<?= ROOT ?>/Pages/levels/level_1.php">Niveau 1</a>
+                            <a href="<?= ROOT ?>/Pages/levels/level_tuto.php">Niveau tutoriel<?php if(!empty($_SESSION) && $_SESSION['user']['progress'] >= 1) : echo "<i class='fas fa-check-circle'></i>"; endif; ?></a>
+                            <a href="<?= ROOT ?>/Pages/levels/level_1.php">Niveau 1<?php if(!empty($_SESSION) && $_SESSION['user']['progress'] >= 2) : echo "<i class='fas fa-check-circle'></i>"; endif; ?></a>
                             <a href="">Niveau 2</a>
                             <a href="">Niveau 3</a>
                         </div>
