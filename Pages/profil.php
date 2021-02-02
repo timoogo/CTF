@@ -6,7 +6,7 @@ if (empty($_SESSION['user'])) {
     header('location:login.php?request=login');
 }
 
-var_dump($_SESSION);
+// var_dump($_SESSION);
 
 ?>
 <section class="profil-info">

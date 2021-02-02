@@ -41,8 +41,13 @@ if (!empty($_POST)) {
             $insert_db->bindParam(':pass', $pass, PDO::PARAM_STR);
             $insert_db->execute();
 
+            $ids = $pdo->query("SELECT user_id FROM users ORDER BY user_id DESC");
+            $user_id = $ids->fetch();
+            $id = $user_id['user_id'];
+            $init_progress = $pdo->prepare("INSERT INTO completion (user_id, level_id) VALUES ($id, 0)");
+            $init_progress->execute();
 
-            header('location:' . ROOT . '/Views/profil.php');
+            header('location:' . ROOT . '/Pages/profil.php');
         } else {
             echo '<div class="errors">' . implode('<br>', $errors) . '</div>';
         }
