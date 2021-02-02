@@ -6,6 +6,8 @@ if (empty($_SESSION['user'])) {
     header('location:login.php?request=login');
 }
 
+var_dump($_SESSION);
+
 ?>
 <section class="profil-info">
     <h2>Vos infos:</h2>

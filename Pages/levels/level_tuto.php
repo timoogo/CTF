@@ -2,7 +2,7 @@
 include "../../Components/init.php";
 include "../header.php";
 ?>
-    <main>
+    <main data-id="1">
         <div class="chapter-menu">
             <div class="left-menu">
                 <h2>Liste des chapitres</h2>

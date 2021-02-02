@@ -122,7 +122,6 @@ function CheckUserInput() {
             break;
         case "hack 1234":
             textAnswer = $('<p class="term_text answers">Good job <span id="dots"></span></p>');
-            let dots = 0;
             termAnswer.append(textAnswer);
             dotsAnim($('#dots'),150);
 

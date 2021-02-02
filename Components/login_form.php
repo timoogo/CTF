@@ -20,6 +20,9 @@ if(!empty($_POST)){
                 $_SESSION['user']['id'] = $db_infos['user_id'];
                 $_SESSION['user']['pseudo'] = $db_infos['user_username'];
                 $_SESSION['user']['email'] = $db_infos['user_email'];
+                $progress = $pdo->query("SELECT level_id FROM completion INNER JOIN users WHERE completion.user_id = users.user_id AND users.user_id = $db_infos[user_id]");
+                $progress_n = $progress->fetch();
+                $_SESSION['user']['progress'] = $progress_n['level_id'];
                 header('location:' . ROOT . '/Pages/profil.php');
             } else {
                 echo '<div class="errors">Identifiants incorrects</div>';
