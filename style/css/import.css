@@ -352,6 +352,18 @@ main .main-container .sections-container section .titre-accueil .accueil a {
   cursor: pointer;
 }
 
+.tooltip {
+  position: absolute;
+  width: 140px;
+  padding: 15px 10px;
+  border-radius: 4px;
+  font-family: "Nunito";
+  text-align: center;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
 #main-container {
   width: 100%;
   max-width: 100vw;
