@@ -33,8 +33,8 @@ include "./header.php";
                             Chapitre 2
                         </p>
                         <div class="chapter-content accueil">
-                            <a href="<?= ROOT ?>/Pages/levels/level_tuto.php">Niveau tutoriel</a>
-                            <a href="<?= ROOT ?>/Pages/levels/level_1.php">Niveau 1</a>
+                            <a href="<?= ROOT ?>/Pages/levels/level_2-tuto.php">Niveau tutoriel</a>
+                            <a href="<?= ROOT ?>/Pages/levels/level_2-1.php">Niveau 1</a>
                             <a href="">Niveau 2</a>
                             <a href="">Niveau 3</a>
                         </div>
