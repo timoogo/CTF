@@ -2,7 +2,6 @@
 
 include "../../Components/init.php";
 include "../header.php";
-include "../../Components/left_menu.php";
 
 
 if(!empty($_POST)){
@@ -28,6 +27,8 @@ if(!empty($_POST)){
             header('location:' . ROOT . '/Pages/levels/level_2-1.php');
       }
 }
+
+include "../../Components/left_menu.php";
 ?>
 
 <div id="main-container">
