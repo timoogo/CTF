@@ -2,6 +2,7 @@
 
 include "../../Components/init.php";
 include "../header.php";
+include "../../Components/left_menu.php";
 
 
 if(!empty($_POST)){
@@ -29,18 +30,27 @@ if(!empty($_POST)){
 }
 ?>
 
-<div class="main-container">
+<div id="main-container">
+
+      <div class="levelDescription">
+            <p data-tooltip-container>Pour ce deuxième chapitre, vous allez découvrir les failles de sécurité SQL</p>
+            <p data-tooltip-container>Votre but pour ce premier niveau sera de réaliser une injection SQL, chose réalisable lorsque les valeurs des champs ne sont pas vérifiés et sécurisés. Essayez de passer au prochain niveau sans pour autant connaitre le nom d'utilisateur ou le mot de passe</p>
+            
+      </div>
 
       <form method="POST">
 
-            <Label for="user">Username</Label>  
+            <Label for="user" style="color: white;">Username</Label>  
             <input id="user" type="text" name="user" placeholder="Username">
 
 
-            <Label for="pass">Password</Label>
+            <Label for="pass" style="color: white;">Password</Label>
             <input id="pass" type="text" name="password" placeholder="Password">
 
             <button>Submit</button>
       </form>
 
 </div>
+
+
+<script src="<?= ROOT ?>/script/main.js"></script>
