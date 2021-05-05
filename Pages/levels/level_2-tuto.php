@@ -27,6 +27,7 @@ if (!empty($_POST)) {
             header('location:' . ROOT . '/Pages/levels/level_2-1.php');
       }
 }
+
 include "../../Components/left_menu.php";
 ?>
 
